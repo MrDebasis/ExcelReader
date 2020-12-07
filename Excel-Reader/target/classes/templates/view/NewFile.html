@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Debasis</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="Container-flwid">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>File Upload</h2>
+				
+				<form action="" th:action="@{'/fileupload'}"
+					th:object="${arnatiSteel}" method="post"
+					enctype='multipart/form-data'>
+					<div class="form-group">
+						<label for="fileupload">file upload:</label> <input type="file"
+							class="form-control" id="file" name="file" th:field="*{file}">
+					</div>
+
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+				</div>
+	</div>
+	</div>
+</body>
+</html>
